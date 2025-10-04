@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа</title>
-        <link rel="stylesheet" href="style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-            <div class="header">Хэдер</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-        <div class="content">
-            <div>
-                <img src ="images/morkov.jpg">
-                <p>Морковь</p>
-                <p>Цена: 10 $</p>
-            </div>
-            <div>
-                <img src ="images/kitchen-knife.jpg">
-                <p>Кухонный нож</p>
-                <p>Цена: </p>
-            </div>
-            <div>
-                <img src ="images/doska.jpg">
-                <p>Разделочная Доска</p>
-                <p>Цена: 5 $</p>
-            </div>
-        <div class="footer">Футер</div>    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары - Семестровая работа</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Наши товары</h1>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section class="products-section">
+                <h1 class="section-title">Каталог товаров</h1>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="images/morkov.jpg">
+                        <h2 class="product-name">Свежая морковь</h2>
+                        <p class="product-description">Экологически чистая морковь</p>
+                        <p class="product-price">10 $</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/kitchen-knife.jpg">
+                        <h2 class="product-name">Кухонный нож</h2>
+                        <p class="product-description">Профессиональный нож из нержавеющей стали</p>
+                        <p class="product-price">15 $</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="images/doska.jpg">
+                        <h2 class="product-name">Разделочная доска</h2>
+                        <p class="product-description">Бамбуковая разделочная доска</p>
+                        <p class="product-price">5 $</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+             <p>Футер</p>
+        </footer>    
+    </div>
+</body>
 </html>
