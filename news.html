@@ -3,50 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новости - Семестровая работа</title>
+    <title>Главная - Новости</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <div class="page-container">
+    <!-- Основной контейнер -->
+    <div class="page">
+        
+        <!-- Шапка -->
         <header class="header">
-            <h1>Последние новости</h1>
+            <h1 class="header__title">Главные новости</h1>
         </header>
 
+        <!-- Навигация -->
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+                 <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
             </ul>
         </nav>
 
-        <main class="content">
-            <section class="news-section">
-                <h1 class="section-title">Новости компании</h1>
-                <div class="news-container">
-                    <article class="news-card">
-                        <h2 class="news-title">Новая морковь</h2>
-                        <p class="news-meta">01.01.2020 | Иванов Иван Иванович</p>
-                        <p class="news-text">Carrot for 10 $ - новый вид моркови, выращенный в Антарктиде.</p>
-                    </article>
-                    <article class="news-card">
-                        <h2 class="news-title">Новые поступления кухонных ножей</h2>
-                        <p class="news-meta">01.01.2020 | Иванов Иван Иванович</p>
-                        <p class="news-text">В нашем магазине появились новые кухонные ножи премиум-класса от ведущих производителей.</p>
-                    </article>
-                    <article class="news-card">
-                        <h2 class="news-title">Акция на разделочные доски</h2>
-                        <p class="news-meta">01.01.2020 | Иванов Иван Иванович</p>
-                        <p class="news-text">Cпециальные цены на разделочные доски весь январь! Успейте приобрести по выгодной цене.</p>
-                    </article>
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="news">
+                <h1 class="news__title">Новости компании</h1>
+                <div class="news__list">
+                    <div class="news-item">
+                        <h2 class="news-item__title">Новая морковь</h2>
+                        <p class="news-item__date">01.01.2020 | Иванов Иван Иванович</p>
+                        <p class="news-item__text">Carrot for 10 $ - новый вид моркови, выращенный в Антарктиде.</p>
+                    </div>
+                    <div class="news-item">
+                        <h2 class="news-item__title">Новые поступления кухонных ножей</h2>
+                        <p class="news-item__date">01.01.2020 | Иванов Иван Иванович</p>
+                        <p class="news-item__text">В нашем магазине появились новые кухонные ножи премиум-класса от ведущих производителей.</p>
+                    </div>
+                    <div class="news-item">
+                        <h2 class="news-item__title">Акция на разделочные доски</h2>
+                        <p class="news-item__date">01.01.2020 | Иванов Иван Иванович</p>
+                        <p class="news-item__text">Cпециальные цены на разделочные доски весь январь! Успейте приобрести по выгодной цене.</p>
+                    </div>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-           <p>Футер</p>
+           <p>2024 Мой сайт</p>
         </footer>    
     </div>
 </body>

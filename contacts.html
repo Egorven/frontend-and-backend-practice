@@ -152,43 +152,62 @@
         </style>
 </head>
 <body>
-    <div class="page-container">
+ <!-- Основной контейнер -->
+    <div class="page">
+        
+        <!-- Шапка -->
         <header class="header">
-            <h1>Наши контакты</h1>
+            <h1 class="header__title">Контакты</h1>
         </header>
 
+        <!-- Навигация -->
         <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+                 <li class="nav__item">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
             </ul>
         </nav>
 
-        <main class="content">
-            <section class="contacts-section">
-                <h1 class="section-title">Контактная информация</h1>
-                <div class="contacts-container">
-                    <article class="contact-info">
-                        <h2>Основные контакты</h2>
-                        <div class="contact-details">
-                            <p><strong>Адрес электронной почты:</strong> example@list.ru</p>
-                            <p><strong>Адрес:</strong> Москва, ул. Примерная, д. 123</p>
-                            <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
-                            <p><strong>Режим работы:</strong> Пн-Пт: 9:00-18:00</p>
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="contacts">
+                <h1 class="contacts__title">Контактная информация</h1>
+                <div class="contacts__list">
+                        <div class="contact-item">
+                            <h2 class = "contact-item__title">Адрес электронной почты</h2> 
+                            <p class = "contact-item__value">example@list.ru</p>
+                            </div>
+                             <div class="contact-item">
+                            <h2 class = "contact-item__title">Адрес</h2> 
+                            <p class = "contact-item__value">Москва, ул. Примерная, д. 123</p>
+                            </div>
+                             <div class="contact-item">
+                            <h2 class = "contact-item__title">Телефон</h2> 
+                            <p class = "contact-item__value">+7 (495) 123-45-67</p>
+                            </div>
+                             <div class="contact-item">
+                            <h2 class = "contact-item__title">Режим работы</h2> 
+                            <p class = "contact-item__value">Пн-Пт: 9:00-18:00</p>
+                            </div>
                         </div>
-                    </article>
-                    <div class="contact-action">
+            </section>
+             <div class="button">
                          <button class="contact-button" onclick="contactModal.showModal()">Связаться с нами</button>
                     </div>
-                </div>
-            </section>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2024 Контактная информация. Все права защищены.</p>
+            <p>&copy; 2024 Мой сайт</p>
         </footer>
          <dialog id="contactModal">
                 <div class="modal-header">
