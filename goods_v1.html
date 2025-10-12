@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Товары</title>
+     <link rel="stylesheet" href="style/theme.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="theme.js"></script>
+</head>
+<body>
+    <!-- Основной контейнер -->
+    <div class="page">
+        
+        <!-- Шапка -->
+        <header class="header">
+                 <button class="theme-toggle" id="themeToggle" >🌙</button>
+            <h1 class="header__title">Товары</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+                 <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="goods">
+                <h1 class="section-title">Каталог товаров</h1>
+                <div class="goods__list">
+                    <div class="goods-card">
+                        <img class = "goods-card__image" src="images/morkov.jpg">
+                        <h2 class="goods-card__name">Свежая морковь</h2>
+                        <p class="goods-card__description">Экологически чистая морковь</p>
+                        <p class="goods-card__price">10 $</p>
+                    </div>
+                    <div class="goods-card">
+                        <img class = "goods-card__image" src="images/kitchen-knife.jpg">
+                        <h2 class="goods-card__name">Кухонный нож</h2>
+                        <p class="goods-card__description">Профессиональный нож из нержавеющей стали</p>
+                        <p class="goods-card__price">15 $</p>
+                    </div>
+                    <div class="goods-card">
+                        <img class = "goods-card__image" src="images/doska.jpg">
+                        <h2 class="goods-card__name">Разделочная доска</h2>
+                        <p class="goods-card__description">Бамбуковая разделочная доска</p>
+                        <p class="goods-card__price">5 $</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+       <footer class="footer">
+           <p class="footer__text">&copy; 2024 Мой сайт</p>
+        </footer>   
+    </div>
+</body>
+</html>
