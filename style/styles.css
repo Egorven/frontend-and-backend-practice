@@ -1,20 +1,4 @@
 /* CSS переменные */
-:root {
-    --color-main: #2c3e50;
-    --color-accent: #3498db;
-    --color-light: #ecf0f1;
-    --color-dark: #34495e;
-    --color-text: #2c3e50;
-    --color-white: #ffffff;
-    
-    --shadow: 0 2px 5px rgba(0,0,0,0.1);
-    --radius: 8px;
-    
-    --space-sm: 10px;
-    --space-md: 20px;
-    --space-lg: 30px;
-}
-
 /* Базовые стили */
 * {
     margin: 0;
@@ -364,7 +348,7 @@ body {
 /* Блок goods */
 .goods
 {
-     background: var(--color-white);
+    background: var(--color-white);
     padding: var(--space-lg);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -411,6 +395,185 @@ body {
     margin-bottom: 20px;
     border: 3px solid #f8f9fa;
 }
+.theme-toggle {
+    background: var(--color-accent);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    cursor: pointer;
+     transition: all 1.5s ease;
+    top: 10px;
+    right: 10px;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Тёмная тема */
+
+[data-theme="dark"] body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .header {
+    background: #312047;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .nav {
+    background: #53377A;
+}
+
+[data-theme="dark"] .nav__link {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .main {
+    background: var(--color-white);
+}
+
+[data-theme="dark"] .section-title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .footer {
+    background: #312047;
+    color: #ffffff;
+}
+
+/* Тёмная тема для товаров */
+[data-theme="dark"] .goods {
+    background: var(--color-white);
+}
+
+[data-theme="dark"] .goods-card {
+    background: var(--color-light);
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+[data-theme="dark"] .goods-card__name {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .goods-card__description {
+    color: #bb86fc;
+}
+
+[data-theme="dark"] .goods-card__price {
+    color: #ff6b6b;
+}
+
+/* Тёмная тема для портфолио */
+[data-theme="dark"] .profile__card {
+    background: var(--color-light);
+    color: #ffffff;
+}
+
+[data-theme="dark"] .profile__name {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .profile__group {
+    color: #bb86fc;
+}
+
+[data-theme="dark"] .about {
+    background: var(--color-light);
+    color: #ffffff;
+}
+
+[data-theme="dark"] .about__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .skills__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .project-card {
+    background: var(--color-light);
+    color: #ffffff;
+    border-left-color: #bb86fc;
+}
+[data-theme="dark"] .projects__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .project-card__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .project-card__desc {
+    color: #cccccc;
+}
+
+/* Тёмная тема для новостей */
+[data-theme="dark"] .news {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .news__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .news-item {
+     background: var(--color-light);
+    color: #ffffff;
+    border-left-color: #bb86fc;
+}
+
+[data-theme="dark"] .news-item__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .news-item__date {
+    color: #bb86fc;
+}
+
+[data-theme="dark"] .news-item__text {
+    color: #cccccc;
+}
+
+/* Тёмная тема для контактов */
+[data-theme="dark"] .contacts {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .contacts__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .contact-item {
+     background: var(--color-light);
+    color: #ffffff;
+}
+
+[data-theme="dark"] .contact-item__title {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .contact-item__value {
+    color: #bb86fc;
+}
+
+[data-theme="dark"] .contact-button {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+    color: white;
+}
+* {
+    transition: background-color 0.3s ease, 
+                color 0.3s ease, 
+                border-color 0.3s ease, 
+                box-shadow 0.3s ease;
+}
+
+
+
 
 
 
