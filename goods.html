@@ -3,128 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товары - Магазин</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Главная - Товары</title>
+     <link rel="stylesheet" href="style/theme.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="theme.js"></script>
 </head>
-<body class="bg-light">
-    <div class="container-fluid p-0">
-        <!-- Header -->
-        <header class="bg-primary text-white py-3">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <h1 class="h3 mb-0 text-center text-md-start">
-                            <i class="bi bi-shop me-2"></i>Магазин товаров
-                        </h1>
-                    </div>
-                </div>
-            </div>
+<body>
+    <!-- Основной контейнер -->
+    <div class="page">
+        
+        <!-- Шапка -->
+        <header class="header">
+                 <button class="theme-toggle" id="themeToggle" >🌙</button>
+            <h1 class="header__title">Товары</h1>
         </header>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav w-100 justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">
-                                <i class="bi bi-house me-1"></i>Главная
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">
-                                <i class="bi bi-newspaper me-1"></i>Новости
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacts.html">
-                                <i class="bi bi-telephone me-1"></i>Контакты
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="goods.html">
-                                <i class="bi bi-cart me-1"></i>Товары
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                </li>
+                 <li class="nav__item nav__item--active">
+                    <a class="nav__link" href="goods.html">Товары</a>
+                </li>
+            </ul>
         </nav>
 
-        <!-- Main Content -->
-        <main class="container my-5">
-            <div class="row mb-4">
-                <div class="col-12">
-                    <h2 class="text-center mb-4">Каталог товаров</h2>
-                </div>
-            </div>
-
-            <!-- Товары -->
-       <div class="row g-4 justify-content-center">
-                <!-- Товар 1 -->
-                <div class="col-md-4">
-                    <div class="card text-center h-100">
-                        <img src="images/morkov.jpg" class="card-img-top" alt="Свежая морковь">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Свежая морковь</h5>
-                            <p class="card-text">Экологически чистая морковь</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-primary">10 $</a>
-                            </div>
-                        </div>
+        <!-- Основной контент -->
+        <main class="main">
+            <section class="goods">
+                <h1 class="section-title">Каталог товаров</h1>
+                <div class="goods__list">
+                    <div class="goods-card">
+                        <img class = "goods-card__image" src="images/morkov.jpg">
+                        <h2 class="goods-card__name">Свежая морковь</h2>
+                        <p class="goods-card__description">Экологически чистая морковь</p>
+                        <p class="goods-card__price">10 $</p>
+                    </div>
+                    <div class="goods-card">
+                        <img class = "goods-card__image" src="images/kitchen-knife.jpg">
+                        <h2 class="goods-card__name">Кухонный нож</h2>
+                        <p class="goods-card__description">Профессиональный нож из нержавеющей стали</p>
+                        <p class="goods-card__price">15 $</p>
+                    </div>
+                    <div class="goods-card">
+                        <img class = "goods-card__image" src="images/doska.jpg">
+                        <h2 class="goods-card__name">Разделочная доска</h2>
+                        <p class="goods-card__description">Бамбуковая разделочная доска</p>
+                        <p class="goods-card__price">5 $</p>
                     </div>
                 </div>
-
-                <!-- Товар 2 -->
-                <div class="col-md-4">
-                    <div class="card text-center h-100">
-                        <img src="images/kitchen-knife.jpg" class="card-img-top" alt="Кухонный нож">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Кухонный нож</h5>
-                            <p class="card-text">Профессиональный нож из нержавеющей стали</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-primary">15 $</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Товар 3 -->
-                <div class="col-md-4">
-                    <div class="card text-center h-100">
-                        <img src="images/doska.jpg" class="card-img-top" alt="Разделочная доска">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Разделочная доска</h5>
-                            <p class="card-text">Бамбуковая разделочная доска</p>
-                            <div class="mt-auto">
-                                <a href="#" class="btn btn-primary">5 $</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
 
-        <!-- Footer -->
-             <footer class="bg-dark text-white py-4 mt-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">&copy; 2024 Сайт студента. Все права защищены.</p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
-                        <a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+       <footer class="footer">
+           <p class="footer__text">&copy; 2024 Мой сайт</p>
+        </footer>   
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
